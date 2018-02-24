@@ -18,7 +18,7 @@ lazy val root = Project(id = "webjars-bootstrap-load-test", base = file("."))
     libraryDependencies ++= Seq(
       "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % "test",
       "org.webjars" %% "webjars-play" % "2.6.3",
-      "org.webjars" % "bootstrap" % "4.0.0"
+      "org.webjars" % "bootstrap" % "4.0.0-1"
     ),
     sourceDirectories in (Test, TwirlKeys.compileTemplates) := Seq(
       sourceDirectory.value / "test" / "html-templates"

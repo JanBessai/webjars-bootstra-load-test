@@ -1,10 +1,14 @@
 requirejs.onError = function(err) {
-    $('#errors').text(err);
+    var oldErrors = $('#errors').text();
+    $('#errors').text(oldErrors + err + "; ");
 };
 require(['bootstrap'],
   function(bootstrap) {
-      $(function () { $('#status').text("Bootstrap OK!"); });
+      $(function() { $('#status').text("Bootstrap OK!"); });
   },
   function (err) {
-      $(function () { $('#errors').text(err); });
+      $(function () {
+          var oldErrors = $('#errors').text();
+          $('#errors').text(oldErrors + err + "; ");
+      });
   });
