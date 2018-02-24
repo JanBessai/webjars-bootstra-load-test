@@ -42,7 +42,7 @@ class WebjarsBootstrapLoadTest extends PlaySpec with GuiceOneServerPerSuite with
   }
 
   /* uncomment to be able to see the test page in your browser
-  
+
   "A terrible hack to test things manually" must {
     "show you an url until you request stop" in {
       val request = s"/"
