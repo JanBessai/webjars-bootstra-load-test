@@ -1,0 +1,20 @@
+@(webJars: org.webjars.play.WebJarsUtil)
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Deprecation Test</title>
+    <!-- Bootstrap core CSS -->
+    @webJars.locate("css/bootstrap.min.css").css()
+    <!-- RequireJS bootstrap javascript -->
+    @webJars.requireJs(routes.Assets.at("test.js"))
+</head>
+<body>
+  <h1>Nothing to see here</h1>
+  <h3 id="errors">No Errors!</h3>
+  <h3 id="status">Bootstrap Failed!</h3>
+</body>
+</html>

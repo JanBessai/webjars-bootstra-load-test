@@ -1,0 +1,4 @@
+GET   /js/*file        controllers.Assets.at(path="/deprecation/", file)
+GET   /                load.WebjarsBootstrapLoadTestController.index()
+GET   /stop            load.WebjarsBootstrapLoadTestController.stop()
+->    /webjars         webjars.Routes
